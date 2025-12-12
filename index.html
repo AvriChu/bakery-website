@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beaty Zone</title>
-    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
   </head>
   <body>
     <header>
@@ -18,12 +18,14 @@
           ><img src="./img/logo.svg" alt="Лого косметологічної клініки"
         /></a>
         <ul>
-          <li>
-            <a href="#about-us-section"><span>Про нас</span></a>
+          <li class="nav-link">
+            <a href="#about-us-section">Про нас</a>
           </li>
-          <li><a href="#why-us-section">Чому ми</a></li>
-          <li><a href="#procedures-section">Наші процедури</a></li>
-          <li><a href="#contacts-section">Контакти</a></li>
+          <li class="nav-link"><a href="#why-us-section">Чому ми</a></li>
+          <li class="nav-link">
+            <a href="#procedures-section">Наші процедури</a>
+          </li>
+          <li class="nav-link"><a href="#contacts-section">Контакти</a></li>
         </ul>
         <div class="list-of-icons">
           <ul>
@@ -49,16 +51,18 @@
     <main>
       <section>
         <p>Косметологічна клініка</p>
-        <h1 lang="en">
-          <span>Beauty<br />Zone</span>
-        </h1>
-        <button type="button">Замовити дзвінок</button>
+        <h1 class="main-tittle" lang="en">Beauty<br />Zone</h1>
+        <button class="button-order" type="button">Замовити дзвінок</button>
         <p class="small-gray-text-header">
-          Запишись та отримай безкоштовну консультацію нашого косметолога
+          Запишись та отримай безкоштовну <br />
+          консультацію нашого косметолога
         </p>
       </section>
       <section id="about-us-section">
-        <h2>Перевтілюйтесь<br />в <span lang="en">beauty zone!</span></h2>
+        <h2 class="section-tittle">
+          Перевтілюйтесь<br />в
+          <span class="access" lang="en">beauty zone!</span>
+        </h2>
         <p>
           Наша косметологічна клініка пропонує вам професійні послуги з догляду
           за шкірою обличчя та тіла.
@@ -76,7 +80,9 @@
         <img src="./img/star3.svg" alt="Третя зірка" />
       </section>
       <section id="why-us-section">
-        <h2>Чому люди<br /><span>обирають нас</span></h2>
+        <h2 class="section-tittle">
+          Чому люди<br /><span class="access">обирають нас</span>
+        </h2>
         <ul>
           <li>
             <article>
@@ -114,7 +120,9 @@
         </ul>
       </section>
       <section id="procedures-section">
-        <h2>Наші <span>процедури</span></h2>
+        <h2 class="section-tittle">
+          Наші <span class="access">процедури</span>
+        </h2>
         <div class="list-of-services">
           <button type="button" class="button-with-arrow">
             <img src="./img/arrow.svg" alt="Кнопка перемикання" />
@@ -158,7 +166,9 @@
         </div>
       </section>
       <section id="contacts-section">
-        <h2>Як нас <span>знайти?</span></h2>
+        <h2 class="section-tittle">
+          Як нас <span class="access">знайти?</span>
+        </h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475791668505!2d30.775223399999994!3d50.50671339999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0LLRg9C70LjRhtGPINCi0LDRgNCw0YHQsCDQqNC10LLRh9C10L3QutCwLCA1LCDQkdGA0L7QstCw0YDQuCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgMDc0MDA!5e0!3m2!1suk!2sua!4v1765058131477!5m2!1suk!2sua"
           width="605"
@@ -168,21 +178,23 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
         <div class="how-to-find-us-bur">
-          <h2>
-            Запишіться <span>безкоштовно</span><br />та отримайте подарунок
+          <h2 class="section-tittle">
+            Запишіться <span class="access">безкоштовно</span><br />та отримайте
+            подарунок
           </h2>
           <form action="/send" method="post">
             <input type="text" placeholder="Ваше ім'я та прізвище" />
             <input type="tel" placeholder="Ваш номер телефону" />
             <input type="email" placeholder="Ваша електронна пошта" />
-            <button type="submit">Записатись безкоштовно</button>
+            <button class="button-order" type="submit">
+              Записатись безкоштовно
+            </button>
           </form>
-          <a href="#" target="_blank">
-            <p>
-              Натискаючи на кнопку я погоджуюсь<br />з політикою
-              конфіденційності
-            </p></a
-          >
+          <a class="access-to-potitic" href="#" target="_blank">
+            Натискаючи на кнопку я погоджуюсь<br /><u
+              >з політикою конфіденційності</u
+            >
+          </a>
         </div>
       </section>
     </main>
@@ -192,12 +204,14 @@
           ><img src="./img/logo.svg" alt="Лого косметологічної клініки"
         /></a>
         <ul>
-          <li>
-            <a href="#about-us-section"><span>Про нас</span></a>
+          <li class="nav-link">
+            <a href="#about-us-section">Про нас</a>
           </li>
-          <li><a href="#why-us-section">Чому ми</a></li>
-          <li><a href="#procedures-section">Наші процедури</a></li>
-          <li><a href="#contacts-section">Контакти</a></li>
+          <li class="nav-link"><a href="#why-us-section">Чому ми</a></li>
+          <li class="nav-link">
+            <a href="#procedures-section">Наші процедури</a>
+          </li>
+          <li class="nav-link"><a href="#contacts-section">Контакти</a></li>
         </ul>
       </nav>
       <address>
@@ -235,8 +249,8 @@
         </ul>
       </address>
       <ul>
-        <li><p>Політика конфіденційності</p></li>
-        <li><p class="small-text">&copy; 2022 Дані захищені</p></li>
+        <li>Політика конфіденційності</li>
+        <li class="small-text">&copy; 2022 Дані захищені</li>
       </ul>
       <img src="./img/some-bottles.webp" alt="Декілька пляшичок" />
     </footer>
