@@ -49,7 +49,7 @@
       </nav>
     </header>
     <main>
-      <section>
+      <section class="section-form">
         <p>Косметологічна клініка</p>
         <h1 class="main-tittle" lang="en">Beauty<br />Zone</h1>
         <button class="button-order" type="button">Замовити дзвінок</button>
@@ -58,17 +58,17 @@
           консультацію нашого косметолога
         </p>
       </section>
-      <section id="about-us-section">
+      <section class="section-form" id="about-us-section">
         <h2 class="section-tittle">
           Перевтілюйтесь<br />в
           <span class="access" lang="en">beauty zone!</span>
         </h2>
-        <p>
+        <p class="change-text">
           Наша косметологічна клініка пропонує вам професійні послуги з догляду
           за шкірою обличчя та тіла.
         </p>
-        <p>
-          B <b lang="en">Beauty Bone</b> ми гарантуємо найвищі стандарти якості
+        <p class="change-text">
+          B <b lang="en">Beauty Zone</b> ми гарантуємо найвищі стандарти якості
           та приємний сервіс. Наші косметологічні процедури та препарати
           допоможуть вам підтримувати свою красу та молодість. З нами краса
           назавжди!
@@ -79,8 +79,8 @@
         <img src="./img/star2.svg" alt="Друга зірка" />
         <img src="./img/star3.svg" alt="Третя зірка" />
       </section>
-      <section id="why-us-section">
-        <h2 class="section-tittle">
+      <section class="section-form" id="why-us-section">
+        <h2 class="section-tittle center-tittle">
           Чому люди<br /><span class="access">обирають нас</span>
         </h2>
         <ul>
@@ -88,7 +88,7 @@
             <article>
               <div class="info-box">
                 <img src="./img/atom.svg" alt="Символ атому" />
-                <p>
+                <p class="info-text">
                   Всі наші косметологи мають вищу медичну освіту та стаж роботи
                   від 5 років
                 </p>
@@ -99,7 +99,7 @@
             <article>
               <div class="info-box">
                 <img src="./img/wash.svg" alt="Символ косметики" />
-                <p>
+                <p class="info-text">
                   Використовуємо тільки професійне обладнання та косметику,
                   перевірену часом
                 </p>
@@ -110,7 +110,7 @@
             <article>
               <div class="info-box">
                 <img src="./img/crown.svg" alt="Символ корони" />
-                <p>
+                <p class="info-text">
                   Наша мета - підкреслити переваги та приховати недоліки, а не
                   переробити
                 </p>
@@ -119,8 +119,8 @@
           </li>
         </ul>
       </section>
-      <section id="procedures-section">
-        <h2 class="section-tittle">
+      <section class="section-form" id="procedures-section">
+        <h2 class="section-tittle center-tittle">
           Наші <span class="access">процедури</span>
         </h2>
         <div class="list-of-services">
@@ -132,7 +132,7 @@
               <article>
                 <div class="img-of-service">
                   <img src="./img/services1.jpg" alt="Перший сервіс" />
-                  <h3 class="text-service">Маски для обличчя</h3>
+                  <p class="text-service">Маски для обличчя</p>
                 </div>
               </article>
             </li>
@@ -140,7 +140,7 @@
               <article>
                 <div class="img-of-service">
                   <img src="./img/services2.jpg" alt="Другий сервіс" />
-                  <h3 class="text-service">Ін'єкції для обличчя</h3>
+                  <p class="text-service">Ін'єкції для обличчя</p>
                 </div>
               </article>
             </li>
@@ -148,7 +148,7 @@
               <article>
                 <div class="img-of-service">
                   <img src="./img/services3.jpg" alt="Третій сервіс" />
-                  <h3 class="text-service">Очищення обличчя</h3>
+                  <p class="text-service">Очищення обличчя</p>
                 </div>
               </article>
             </li>
@@ -165,8 +165,8 @@
           </button>
         </div>
       </section>
-      <section id="contacts-section">
-        <h2 class="section-tittle">
+      <section class="section-form" id="contacts-section">
+        <h2 class="section-tittle center-tittle">
           Як нас <span class="access">знайти?</span>
         </h2>
         <iframe
@@ -178,14 +178,26 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
         <div class="how-to-find-us-bur">
-          <h2 class="section-tittle">
+          <h3 class="tittle-form">
             Запишіться <span class="access">безкоштовно</span><br />та отримайте
             подарунок
-          </h2>
+          </h3>
           <form action="/send" method="post">
-            <input type="text" placeholder="Ваше ім'я та прізвище" />
-            <input type="tel" placeholder="Ваш номер телефону" />
-            <input type="email" placeholder="Ваша електронна пошта" />
+            <input
+              class="input-info"
+              type="text"
+              placeholder="Ваше ім'я та прізвище"
+            />
+            <input
+              class="input-info"
+              type="tel"
+              placeholder="Ваш номер телефону"
+            />
+            <input
+              class="input-info"
+              type="email"
+              placeholder="Ваша електронна пошта"
+            />
             <button class="button-order" type="submit">
               Записатись безкоштовно
             </button>
@@ -216,11 +228,13 @@
       </nav>
       <address>
         <ul>
-          <li><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
-          <li>
+          <li class="adress-link">
+            <a href="tel:+380960000007">+ 38 (096) 000 00 07</a>
+          </li>
+          <li class="adress-link">
             <a href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
           </li>
-          <li>
+          <li class="adress-link">
             <a href="https://maps.app.goo.gl/iF9Q5mwcEGp7eRN98"
               >Україна, м. Київ, вул. Тараса Шевченка 5</a
             >
@@ -249,8 +263,8 @@
         </ul>
       </address>
       <ul>
-        <li>Політика конфіденційності</li>
-        <li class="small-text">&copy; 2022 Дані захищені</li>
+        <li class="small-politic-text">Політика конфіденційності</li>
+        <li class="secure-text">&copy; 2022 Дані захищені</li>
       </ul>
       <img src="./img/some-bottles.webp" alt="Декілька пляшичок" />
     </footer>

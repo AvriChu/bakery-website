@@ -1,3 +1,22 @@
+/* Шрифти */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-weight: 400;
+  src: url('../fonts/roboto-v50-latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-weight: 600;
+  src: url('../fonts/roboto-v50-latin-600.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-weight: 700;
+  src: url('../fonts/roboto-v50-latin-700.woff2') format('woff2');
+}
 /* Змінни */
 :root {
   --tittle-color: #2b7fff;
@@ -7,10 +26,13 @@
   --white-color: white;
   --black-color: black;
 }
-
 /* Теги */
 body {
   color: var(--main-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
 }
 ul {
   list-style: none;
@@ -18,39 +40,38 @@ ul {
 a {
   text-decoration: none;
 }
-p,
-form input {
-  font-family: 'Roboto';
-  font-weight: 400;
-}
-
 form input {
   background: none;
 }
-.text-service,
-footer p:not(.small-text)footer,
-footer a,
-form input::placeholder,
-footer p:not(.small-text) {
-  color: var(--white-color);
-}
 h1,
-h2,
-h3 {
-  font-family: 'Poppins', sans-serif;
+h2 {
+  font-family: 'Play', sans-serif;
   font-weight: 700;
 }
 /* Класси */
+.nav-link a {
+  color: var(--main-color);
+}
+header .nav-link {
+  font-size: 18px;
+}
 .nav-link a:hover,
+.adress-link a:hover {
+  color: var(--tittle-color);
+  font-weight: 700;
+}
 .main-tittle {
   color: var(--tittle-color);
+  font-size: 140px;
+  line-height: 0.8;
 }
 .small-gray-text-header {
   color: var(--small-color2);
+  font-size: 12px;
 }
-.access-to-potitic,
-.small-text {
+.secure-text {
   color: var(--small-color1);
+  font-size: 13px;
 }
 .button-with-arrow {
   background: none;
@@ -68,9 +89,59 @@ h3 {
   color: var(--main-color);
   border: 2px solid var(--tittle-color);
 }
-.section-tittle .access {
+.section-tittle {
+  font-weight: 700;
+  font-size: 64px;
+}
+.section-tittle .access,
+.tittle-form .access {
   color: var(--tittle-color);
 }
-.info-box p {
+.info-box .info-text {
   color: var(--black-color);
+  line-height: 1.33;
+  text-align: center;
+}
+.change-text {
+  font-size: 22px;
+  line-height: 1.73;
+}
+.change-text b {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.section-tittle.center-tittle {
+  text-align: center;
+}
+.text-service {
+  color: var(--white-color);
+  font-size: 22px;
+  line-height: 1.18;
+}
+.tittle-form {
+  font-weight: 600;
+  font-size: 22px;
+}
+.input-info {
+  background-color: transparent;
+  border-radius: 32px;
+  border: 2px solid var(--small-color1);
+}
+.input-info::placeholder {
+  color: var(--white-color);
+  font-size: 13px;
+}
+.access-to-potitic {
+  color: var(--small-color1);
+  font-size: 12px;
+}
+/* Підвал */
+footer .nav-link a,
+.small-politic-text,
+.adress-link a {
+  color: var(--white-color);
+  font-size: 16px;
+}
+address {
+  font-style: normal;
 }
